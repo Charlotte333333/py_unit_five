@@ -1,7 +1,7 @@
 
-def count(first, last):
+def count(first, last, step):
     test = ""
-    for x in range(first, last):
+    for x in range(first, last, step):
         test += str(x)
 
     print(test)
@@ -19,8 +19,10 @@ def count(first, last):
 
 
 def main():
-    print(count(0, 7))
-    print(count(0, 8))
+    print(count(0, 7, 1))
+    print(count(0, 8, 1))
+    print(count(6, -1, -1))
+    print(count(0, 8, 4))
 
 
 if __name__ == '__main__':
