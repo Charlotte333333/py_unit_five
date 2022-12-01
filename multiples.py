@@ -7,4 +7,15 @@ def get_sum(number):
     """
     pass # make sure to delete this line when writing your function
 
+sum = 0
+for x in range(8):
+
+   if x % 3 == 0 or x % 5 == 0:
+        sum += x
+
+
+print(sum)
+
+
+
 
